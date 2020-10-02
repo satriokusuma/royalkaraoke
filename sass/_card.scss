@@ -1,0 +1,62 @@
+
+.card {
+
+    &__image {  
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
+.card-room {
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.09);
+    background-color: #ffff;
+    transition: all .3s;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &__image {  
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
+.card-menu--warp {
+    padding: 4rem 3rem;
+    overflow: hidden;
+    padding-bottom: 3.2rem;
+
+    @media only screen and (max-width:$bp-small) {
+        padding: 2rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    transition: all .5s;
+    pointer-events: none;
+    filter: brightness(0.65);
+    overflow: hidden;
+    vertical-align: middle;
+    
+}
+
+.card:hover .card__image .img {
+    transform: scale(1.2);
+    filter: brightness(0.90);
+}
+
+.card-room:hover .card-room__image .img {
+    transform: scale(1.2);
+    filter: brightness(0.90);
+}
+
+.card-room:hover {
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}

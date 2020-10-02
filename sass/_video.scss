@@ -1,0 +1,45 @@
+.video {
+    grid-column: center-start / center-end;
+    padding-bottom: 10rem;
+    position: relative;
+
+    &__intro {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 5%;
+    margin: auto;
+    color: $color-four;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+        top: 15%;
+        left: 5%;
+    }
+
+    @media only screen and (max-width:$bp-verysmall) {
+        width: 80%;
+        top: 5%;
+        left: 5%;
+    }
+
+    }
+}
+
+.bg-video {
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.50);
+    overflow: hidden;
+
+    @media only screen and (max-width:$bp-medium) {
+        height: 400px;
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

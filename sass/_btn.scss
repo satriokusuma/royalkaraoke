@@ -1,0 +1,140 @@
+
+#ScrollToTop {
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    visibility: hidden;
+    z-index: 1000;
+    opacity: 0;
+    background-color: #464450;
+    transition: all .5s;
+
+    @media only screen and (max-width:$bp-medium) {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
+#ScrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+#ScrollToTop:hover {
+    background-color: $color-text;
+}
+
+
+.icon {
+    color: #fff;
+    width: 100%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center;
+}
+.icon i  {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all .3s;
+
+    @media only screen and (max-width:$bp-medium) {
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+}
+.icon i:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 1.6rem 3rem;
+    background-color: $color-third;
+    color: $background-color;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: $color-five;
+    color: $background-color;
+}
+
+.btn-1 {
+    border: none;
+    outline: none;
+    padding: 1.6rem 3rem;
+    background-color: $color-text;
+    color: $background-color;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s;
+    margin-left: 2rem;
+}
+
+
+.btn-1:hover {
+    background-color: $color-primary;
+    color: $background-color;
+}
+
+.btn-video {
+    border: none;
+    outline: none;
+    padding: 1.6rem 3rem;
+    margin-top: 4rem;
+    background-color: $color-third;
+    color: $background-color;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s;
+
+    @media only screen and (max-width:$bp-medium) {
+        margin-top: 2rem;
+    }
+
+    
+}
+
+.btn-video:hover {
+    background-color: $color-five;
+    color: $background-color;
+}
+
+.btn-menu {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    background-color: $color-third;
+    transition: all .5s;
+
+    svg {
+        display: none;  
+
+        @media only screen and (max-width:$bp-large) {
+            fill:#fff;
+            height: 3rem;
+            width: 3rem;
+            display: inherit;
+            margin-left: 2px; 
+        }
+        }
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+    background-color: $color-five;
+}

@@ -1,0 +1,188 @@
+.hero {
+    grid-column: center-start / center-end;
+    margin: 5rem 0;
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/h3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &__bg {
+    //     width: 100%;
+    //     filter: brightness(0.50);
+    //     display: block;
+    //     height: 70vh;
+    //     z-index: -1;
+       
+    // }
+
+    // &__bg img {
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: fill;
+    // }
+
+    
+    @media only screen and (max-width:$bp-small) {
+        margin: 1rem 0;
+    }
+
+    &__intro {
+        text-align: center;
+        color: $color-four;
+    }
+}
+
+
+.hero-room {
+    grid-column: center-start / center-end;
+    margin: 5rem 0;
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/karaoke-mic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &__bg {
+    //     width: 100%;
+    //     filter: brightness(0.50);
+    //     display: block;
+    //     height: 70vh;
+    //     z-index: -1;
+       
+    // }
+
+    // &__bg img {
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: fill;
+    // }
+
+    @media only screen and (max-width:$bp-small) {
+        margin: 1rem 0;
+    }
+
+    &__intro {
+        text-align: center;
+        color: $color-four;
+    }
+}
+.border {
+    height: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: $color-five;
+    display: block;
+}
+
+.border-menu {
+    height: 2px;
+    width: auto;
+    margin-top: 5px;
+    background-color: $color-five;
+    display: block;
+}
+
+
+.menu {
+    grid-column: center-start / center-end;
+    padding-bottom: 10rem; 
+    display: grid;
+    grid-gap: 5rem;
+    padding: 20px 0;
+
+    
+    @media only screen and (max-width:$bp-small) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+        grid-gap: 1rem;
+        padding: 0;
+    }
+}
+
+.intro {
+    grid-column: center-start / center-end;
+    padding-bottom: 3rem; 
+    border-bottom: dotted 3px $color-third;
+    
+}
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+    grid-gap: 5rem;
+    padding: 20px 0;
+
+    @media only screen and (max-width:$bp-small) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(8rem,1fr));
+        grid-gap: 1rem;
+    }
+
+    &__card {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;   
+    }
+
+  
+}
+
+.data-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50rem,1fr));
+    grid-gap: 5rem;
+    padding-top: 30px;
+    padding-bottom: 10rem;
+
+    @media only screen and (max-width:$bp-small) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+    }
+
+}
+
+.data-menu-room {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
+    grid-gap: 4rem;
+    padding: 10rem 0;
+    padding-bottom: 15rem;
+
+    @media only screen and (max-width:$bp-small) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+        padding: 10rem 0;
+    }
+
+}
+
+.menu-banner {
+    grid-column: center-start / center-end;
+    padding-bottom: 10rem;
+}
+
+.card-menu {
+    display: flex;
+}
+
+.card-menu--room {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: solid 1px $color-text;
+}
+
+
+.logo-wrap {
+    position: relative;
+}
+
+.logo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}

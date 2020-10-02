@@ -1,0 +1,105 @@
+.home {
+    grid-column: center-start / center-end;
+    margin-top: 5rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        margin-top: 3rem;
+       
+    }
+}
+
+
+.owl-carousel {
+    position: relative;
+}
+.item {
+  height: 700px;
+
+  @media only screen and (max-width:$bp-large) {
+    height: 800px;
+   }
+  @media only screen and (max-width:$bp-medium) {
+   height: 650px;
+  }
+  @media only screen and (max-width:$bp-small) {
+    height: 500px;
+   }
+
+   @media only screen and (height:667px) {
+    height: 450px;
+   }
+
+//    @media only screen and (height:731px) {
+//     height: 550px;
+//    }
+
+   @media only screen and (height:823px) {
+    height: 600px;
+   }
+
+   @media only screen and (height:812px) {
+    height: 600px;
+   }
+
+  @media only screen and (max-width:$bp-verysmall) {
+    height: 400px;
+   }
+}
+.item-caption {
+    position: absolute;
+    width: 50%;
+    bottom: 20%;
+    left: 5%;
+    margin: auto;
+    color: $color-four;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        bottom: 20%;
+    }
+
+    @media only screen and (max-width:$bp-verysmall) {
+        bottom: 10%;
+    }
+}
+.owl-dots {
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+
+    @media only screen and (max-width:$bp-medium) {
+       left: 32%;
+    }
+    
+}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    @media only screen and (max-width:$bp-medium) {
+        display: none;
+    }
+   
+}
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    @media only screen and (max-width:$bp-medium) {
+       display: none;
+    }
+   
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.70);
+}

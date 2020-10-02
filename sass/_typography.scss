@@ -1,0 +1,199 @@
+// @font-face {
+//     font-family: "Roboto";
+//     src: url('../fonts/Roboto-Black.ttf') format('truetype');         
+// }
+
+// @font-face {
+//     font-family: "Roboto-thin";
+//     src: url('../fonts/Roboto-Thin.ttf') format('truetype');         
+// }
+// @font-face {
+//     font-family: "Roboto-thinitalic";
+//     src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');         
+// }
+
+
+.heading-first {
+    font-size: 7rem;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 4rem;
+    letter-spacing: 2px;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 3.5rem;
+    }
+}
+
+.heading-first-menu {
+    font-size: 7rem;
+    font-weight: 400;
+    padding-top: 5px;
+    letter-spacing: 2px;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 5rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 3.5rem;
+    }
+}
+
+.heading-second {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+
+    @media only screen and (max-width:$bp-medium) {
+        display: none;
+     }
+}
+
+.heading-second-video {
+    font-size: 6rem;
+    font-weight: 400;
+    padding-top: 5rem;
+    padding-bottom: 5px;
+    letter-spacing: 8px;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+        letter-spacing: 1px;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 5px;
+    padding-bottom: 4rem;
+    color: $color-third;
+    letter-spacing: 8px;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 2.5rem;   
+    }
+}
+
+.heading-secondary--1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 2rem 0;
+    color: $color-third;
+    letter-spacing: 5px;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 2.5rem;   
+    }
+}
+
+.heading-third {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    color: $color-secondary;
+}
+
+.heading-third::after {
+    display: block;
+    height: 2px;
+    background-color: $color-five;
+    content: "";
+    width: 200px;
+    margin-top: 10px;
+}
+
+.heading-third-menu {
+    font-size: 3rem;
+    font-weight: 500;
+    display: inline;
+    color: $color-primary;   
+}
+
+.heading-third-price {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline;
+    color: $color-primary;
+    margin-left: auto;   
+}
+
+.heading-third-menu-room {
+    font-size: 3rem;
+    font-weight: 500;
+    display: inline;
+    color: $color-third;  
+    
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 2rem;  
+        font-weight: bold; 
+    }
+}
+
+.heading-third-price-room {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+    color: $color-primary;
+    margin-left: auto; 
+   
+    align-self: center;
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 2rem;   
+    }
+}
+
+.heading-menu {
+    font-size: 3rem;
+    font-weight: 100;
+    color: $color-five;
+    font-family: 'Pacifico', cursive;
+}
+
+.paragraf-hero {
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-style: italic;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 1.4rem;   
+    }
+}
+
+.paragraf-card {
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 2; 
+
+    &--1 {
+        padding: 2rem 0;
+        font-size: 1.6rem;
+        font-weight: 100;
+        line-height: 2; 
+    }
+}
+
+.paragraf-about {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 2.8;   
+}
+
+.paragraf-about--room {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 2.8;
+    padding-bottom: 4rem; 
+    
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 1.6rem;  
+       
+    }
+}
+

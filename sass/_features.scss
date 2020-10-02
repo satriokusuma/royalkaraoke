@@ -1,0 +1,12 @@
+.features {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(40rem,1fr));
+    grid-gap: 5rem;
+    padding: 100px 0;
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+        padding-bottom: 50px;
+       }
+}

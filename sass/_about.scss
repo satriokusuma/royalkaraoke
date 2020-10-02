@@ -1,0 +1,35 @@
+.about {
+    grid-column: center-start / center-end;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+    
+
+    @media only screen and (max-width:$bp-small) {
+     
+      flex-wrap: wrap-reverse;
+      padding-top: 0;  
+    }
+
+    &__intro {
+        flex: 0 0 60%;
+
+        @media only screen and (max-width:$bp-small) {
+            flex: 0 0 100%;
+          }
+    }
+
+    &__logo {
+        flex: 0 0 40%; 
+        @media only screen and (max-width:$bp-small) {
+            flex: 0 0 100%;
+          }
+    }
+}
+
+.logo {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: fill;
+}

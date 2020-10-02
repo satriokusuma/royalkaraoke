@@ -1,0 +1,127 @@
+.footers {
+    background-color: $color-primary;  
+}
+
+.footers-nav {
+    display: none;
+
+    @media only screen and (max-width:$bp-small) {
+        background-color: $color-primary;
+        display: block;
+        padding-bottom: 9rem; 
+    }
+}
+
+.footer-nav {
+    display: none;
+
+    @media only screen and (max-width:$bp-small) {
+        display: block; 
+        width: 80%;
+        margin: auto;
+        padding: 1rem 0;
+        border-bottom: 1px solid #53504c;
+        flex-direction: column; 
+    }
+}
+
+
+.footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    border-bottom: 1px solid #53504c;
+
+    @media only screen and (max-width:$bp-medium) {
+        flex-direction: column;
+       }
+    
+    &__bg {
+      padding-right: 4rem;
+      padding-bottom: 2rem;
+      flex: 0 0 30%;  
+
+      @media only screen and (max-width:$bp-medium) {
+        padding-right: 0;
+       }
+    
+      &--text {
+        font-size: 1.4rem;
+        color: $color-text;
+        letter-spacing: 1px;
+        line-height: 27px;
+        text-align: center; 
+      }
+
+      &--img {
+         width: 100%;
+         text-align: center; 
+      }
+
+      &--img img {
+          vertical-align: middle;
+      }
+
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem; 
+        justify-content: center; 
+        
+        @media only screen and (max-width:$bp-medium) {
+            padding: 0;
+        }
+    }
+
+    &__items {
+        display: flex;
+        padding: 1rem 0;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    &__link {
+       
+
+        svg {
+        fill:#fff;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1.5rem;
+        transition: all .5s;
+        }
+    }
+
+    &__link svg:hover,
+    &__link svg:active {
+       fill: $color-five;
+    }
+}
+
+.copyright {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    color: $color-text;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &__text {
+        text-decoration: none;
+        color: $color-text;
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+
+    &__text:hover {
+        color: #fff;
+    }
+
+}
