@@ -1398,7 +1398,7 @@ body {
 
 .popup__content {
   position: absolute;
-  top: 46%;
+  top: 49%;
   left: 50%;
   width: 50%;
   margin: auto;
@@ -1420,6 +1420,7 @@ body {
     width: 80%;
     margin: auto;
     padding: 3rem;
+    margin-top: 1rem;
   }
 }
 
