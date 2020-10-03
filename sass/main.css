@@ -1305,7 +1305,7 @@ body {
 }
 
 .card__image {
-  cursor: pointer;
+
   overflow: hidden;
 }
 
@@ -1317,14 +1317,14 @@ body {
   background-color: #ffff;
   -webkit-transition: all .3s;
   transition: all .3s;
-  cursor: pointer;
+ 
   position: relative;
   display: block;
   overflow: hidden;
 }
 
 .card-room__image {
-  cursor: pointer;
+ 
   overflow: hidden;
 }
 
